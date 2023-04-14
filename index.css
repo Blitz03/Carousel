@@ -1,0 +1,48 @@
+/* Importing The Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #23242a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  width: 450px;
+}
+.carousel {
+  display: flex;
+  gap: 1.2rem;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  scroll-snap-align: start;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 300px;
+  color: #fff;
+}
+.card:nth-child(1) {
+  background: linear-gradient(to left, #d66d75, #e29587);
+}
+.card:nth-child(2) {
+  background: linear-gradient(to left, #2193b0, #6dd5ed);
+}
+.card:nth-child(3) {
+  background: linear-gradient(to left, #cc2b5e, #753a88);
+}
+.card:nth-child(4) {
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+}
+.card:nth-child(5) {
+  background: linear-gradient(to left, #ddd6f3, #faaca8);
+}
